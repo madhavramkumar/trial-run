@@ -1,5 +1,7 @@
 package com.example.myfirstapp;
 
+import android.*;
+import android.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -40,7 +42,7 @@ public class DisplayMessageActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
-            case android.R.id.home:
+            case R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
         }
